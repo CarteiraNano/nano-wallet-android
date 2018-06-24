@@ -1,4 +1,4 @@
-package co.nano.nanowallet.ui.home;
+package com.carteiranano.app.ui.home;
 
 import android.databinding.BindingMethod;
 import android.databinding.BindingMethods;
@@ -21,31 +21,31 @@ import java.math.BigDecimal;
 
 import javax.inject.Inject;
 
-import co.nano.nanowallet.R;
-import co.nano.nanowallet.analytics.AnalyticsEvents;
-import co.nano.nanowallet.analytics.AnalyticsService;
-import co.nano.nanowallet.bus.RxBus;
-import co.nano.nanowallet.bus.SocketError;
-import co.nano.nanowallet.bus.WalletHistoryUpdate;
-import co.nano.nanowallet.bus.WalletPriceUpdate;
-import co.nano.nanowallet.bus.WalletSubscribeUpdate;
-import co.nano.nanowallet.databinding.FragmentHomeBinding;
-import co.nano.nanowallet.model.Credentials;
-import co.nano.nanowallet.model.NanoWallet;
-import co.nano.nanowallet.network.AccountService;
-import co.nano.nanowallet.network.model.response.AccountCheckResponse;
-import co.nano.nanowallet.network.model.response.AccountHistoryResponseItem;
-import co.nano.nanowallet.ui.common.ActivityWithComponent;
-import co.nano.nanowallet.ui.common.BaseDialogFragment;
-import co.nano.nanowallet.ui.common.BaseFragment;
-import co.nano.nanowallet.ui.common.FragmentUtility;
-import co.nano.nanowallet.ui.common.KeyboardUtil;
-import co.nano.nanowallet.ui.common.WindowControl;
-import co.nano.nanowallet.ui.receive.ReceiveDialogFragment;
-import co.nano.nanowallet.ui.send.SendFragment;
-import co.nano.nanowallet.ui.settings.SettingsDialogFragment;
-import co.nano.nanowallet.ui.webview.WebViewDialogFragment;
-import co.nano.nanowallet.util.ExceptionHandler;
+import com.carteiranano.app.R;
+import com.carteiranano.app.analytics.AnalyticsEvents;
+import com.carteiranano.app.analytics.AnalyticsService;
+import com.carteiranano.app.bus.RxBus;
+import com.carteiranano.app.bus.SocketError;
+import com.carteiranano.app.bus.WalletHistoryUpdate;
+import com.carteiranano.app.bus.WalletPriceUpdate;
+import com.carteiranano.app.bus.WalletSubscribeUpdate;
+import com.carteiranano.app.databinding.FragmentHomeBinding;
+import com.carteiranano.app.model.Credentials;
+import com.carteiranano.app.model.NanoWallet;
+import com.carteiranano.app.network.AccountService;
+import com.carteiranano.app.network.model.response.AccountCheckResponse;
+import com.carteiranano.app.network.model.response.AccountHistoryResponseItem;
+import com.carteiranano.app.ui.common.ActivityWithComponent;
+import com.carteiranano.app.ui.common.BaseDialogFragment;
+import com.carteiranano.app.ui.common.BaseFragment;
+import com.carteiranano.app.ui.common.FragmentUtility;
+import com.carteiranano.app.ui.common.KeyboardUtil;
+import com.carteiranano.app.ui.common.WindowControl;
+import com.carteiranano.app.ui.receive.ReceiveDialogFragment;
+import com.carteiranano.app.ui.send.SendFragment;
+import com.carteiranano.app.ui.settings.SettingsDialogFragment;
+import com.carteiranano.app.ui.webview.WebViewDialogFragment;
+
 import io.realm.Realm;
 
 /**

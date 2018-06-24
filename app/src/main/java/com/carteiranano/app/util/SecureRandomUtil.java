@@ -1,4 +1,4 @@
-package co.nano.nanowallet.util;
+package com.carteiranano.app.util;
 
 import java.security.SecureRandom;
 

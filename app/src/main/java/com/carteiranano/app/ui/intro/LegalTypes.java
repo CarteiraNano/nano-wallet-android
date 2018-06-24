@@ -1,6 +1,6 @@
-package co.nano.nanowallet.ui.intro;
+package com.carteiranano.app.ui.intro;
 
-import co.nano.nanowallet.R;
+import com.carteiranano.app.R;
 
 /**
  * View Pager types

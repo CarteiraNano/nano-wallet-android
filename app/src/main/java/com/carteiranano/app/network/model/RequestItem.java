@@ -1,8 +1,8 @@
-package co.nano.nanowallet.network.model;
+package com.carteiranano.app.network.model;
 
 import java.util.Calendar;
 
-import co.nano.nanowallet.network.AccountService;
+import com.carteiranano.app.network.AccountService;
 
 /**
  * Request object for queue

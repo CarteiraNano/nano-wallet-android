@@ -1,4 +1,4 @@
-package co.nano.nanowallet.db;
+package com.carteiranano.app.db;
 
 import android.support.annotation.NonNull;
 

@@ -1,13 +1,12 @@
-package co.nano.nanowallet.di.application;
+package com.carteiranano.app.di.application;
 
 
 import javax.inject.Named;
 
-import co.nano.nanowallet.analytics.AnalyticsService;
-import co.nano.nanowallet.di.activity.ActivityScope;
-import co.nano.nanowallet.di.analytics.AnalyticsModule;
-import co.nano.nanowallet.di.persistence.PersistenceModule;
-import co.nano.nanowallet.util.SharedPreferencesUtil;
+import com.carteiranano.app.analytics.AnalyticsService;
+import com.carteiranano.app.di.analytics.AnalyticsModule;
+import com.carteiranano.app.di.persistence.PersistenceModule;
+import com.carteiranano.app.util.SharedPreferencesUtil;
 import dagger.Component;
 import io.realm.Realm;
 

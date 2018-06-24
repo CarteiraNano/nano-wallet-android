@@ -1,6 +1,6 @@
-package co.nano.nanowallet.util;
+package com.carteiranano.app.util;
 
-import co.nano.nanowallet.analytics.AnalyticsService;
+import com.carteiranano.app.analytics.AnalyticsService;
 import timber.log.Timber;
 
 public class ExceptionHandler {

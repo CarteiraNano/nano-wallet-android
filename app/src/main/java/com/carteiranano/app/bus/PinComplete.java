@@ -1,4 +1,4 @@
-package co.nano.nanowallet.bus;
+package com.carteiranano.app.bus;
 
 /**
  * Bus event object when pin complete event occurs

@@ -1,4 +1,4 @@
-package co.nano.nanowallet.broadcastreceiver;
+package com.carteiranano.app.broadcastreceiver;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

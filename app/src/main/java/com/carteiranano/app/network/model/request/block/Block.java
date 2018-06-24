@@ -1,11 +1,10 @@
-package co.nano.nanowallet.network.model.request.block;
+package com.carteiranano.app.network.model.request.block;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.annotation.JsonProperty;
 import com.google.gson.annotations.SerializedName;
 
-import co.nano.nanowallet.network.model.BlockTypes;
+import com.carteiranano.app.network.model.BlockTypes;
 
 /**
  * Base block

@@ -1,11 +1,11 @@
-package co.nano.nanowallet.ui.home;
+package com.carteiranano.app.ui.home;
 
 import com.airbnb.epoxy.Typed2EpoxyController;
 
 import java.util.List;
 
-import co.nano.nanowallet.TransactionBindingModel_;
-import co.nano.nanowallet.network.model.response.AccountHistoryResponseItem;
+import com.carteiranano.app.TransactionBindingModel_;
+import com.carteiranano.app.network.model.response.AccountHistoryResponseItem;
 
 /**
  * Controller to handle adding and removing views on the wallet

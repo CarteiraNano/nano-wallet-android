@@ -1,9 +1,9 @@
-package co.nano.nanowallet.network.model.request;
+package com.carteiranano.app.network.model.request;
 
 import com.google.gson.annotations.SerializedName;
 
-import co.nano.nanowallet.network.model.Actions;
-import co.nano.nanowallet.network.model.BaseRequest;
+import com.carteiranano.app.network.model.Actions;
+import com.carteiranano.app.network.model.BaseRequest;
 
 /**
  * Fetch work for a transaction

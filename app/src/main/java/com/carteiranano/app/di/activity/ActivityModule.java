@@ -1,30 +1,28 @@
-package co.nano.nanowallet.di.activity;
+package com.carteiranano.app.di.activity;
 
 import android.content.Context;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
-import com.google.gson.JsonElement;
 
-import co.nano.nanowallet.model.NanoWallet;
-import co.nano.nanowallet.network.AccountService;
-import co.nano.nanowallet.network.model.Actions;
-import co.nano.nanowallet.network.model.BaseResponse;
-import co.nano.nanowallet.network.model.BlockTypes;
-import co.nano.nanowallet.network.model.response.AccountCheckResponse;
-import co.nano.nanowallet.network.model.response.AccountHistoryResponse;
-import co.nano.nanowallet.network.model.response.BlockItem;
-import co.nano.nanowallet.network.model.response.BlockResponse;
-import co.nano.nanowallet.network.model.response.CurrentPriceResponse;
-import co.nano.nanowallet.network.model.response.ErrorResponse;
-import co.nano.nanowallet.network.model.response.ProcessResponse;
-import co.nano.nanowallet.network.model.response.SubscribeResponse;
-import co.nano.nanowallet.network.model.response.TransactionResponse;
-import co.nano.nanowallet.network.model.response.WarningResponse;
-import co.nano.nanowallet.network.model.response.WorkResponse;
-import co.nano.nanowallet.util.ExceptionHandler;
+import com.carteiranano.app.model.NanoWallet;
+import com.carteiranano.app.network.AccountService;
+import com.carteiranano.app.network.model.Actions;
+import com.carteiranano.app.network.model.BaseResponse;
+import com.carteiranano.app.network.model.BlockTypes;
+import com.carteiranano.app.network.model.response.AccountCheckResponse;
+import com.carteiranano.app.network.model.response.AccountHistoryResponse;
+import com.carteiranano.app.network.model.response.BlockItem;
+import com.carteiranano.app.network.model.response.BlockResponse;
+import com.carteiranano.app.network.model.response.CurrentPriceResponse;
+import com.carteiranano.app.network.model.response.ErrorResponse;
+import com.carteiranano.app.network.model.response.ProcessResponse;
+import com.carteiranano.app.network.model.response.SubscribeResponse;
+import com.carteiranano.app.network.model.response.TransactionResponse;
+import com.carteiranano.app.network.model.response.WarningResponse;
+import com.carteiranano.app.network.model.response.WorkResponse;
+
 import dagger.Module;
 import dagger.Provides;
 import io.gsonfire.GsonFireBuilder;

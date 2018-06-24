@@ -1,8 +1,8 @@
-package co.nano.nanowallet.ui.settings;
+package com.carteiranano.app.ui.settings;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.app.AlertDialog;
-import android.content.Context;
 import android.databinding.BindingAdapter;
 import android.databinding.DataBindingUtil;
 import android.os.Build;
@@ -12,14 +12,13 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-import com.crashlytics.android.answers.Answers;
-import com.crashlytics.android.answers.CustomEvent;
 import com.github.ajalt.reprint.core.AuthenticationFailureReason;
 import com.github.ajalt.reprint.core.Reprint;
 import com.hwangjr.rxbus.annotation.Subscribe;
@@ -30,24 +29,25 @@ import java.util.List;
 
 import javax.inject.Inject;
 
-import co.nano.nanowallet.BuildConfig;
-import co.nano.nanowallet.R;
-import co.nano.nanowallet.analytics.AnalyticsEvents;
-import co.nano.nanowallet.analytics.AnalyticsService;
-import co.nano.nanowallet.bus.CreatePin;
-import co.nano.nanowallet.bus.Logout;
-import co.nano.nanowallet.bus.PinComplete;
-import co.nano.nanowallet.bus.RxBus;
-import co.nano.nanowallet.databinding.FragmentSettingsBinding;
-import co.nano.nanowallet.model.AvailableCurrency;
-import co.nano.nanowallet.model.Credentials;
-import co.nano.nanowallet.model.StringWithTag;
-import co.nano.nanowallet.network.AccountService;
-import co.nano.nanowallet.ui.common.ActivityWithComponent;
-import co.nano.nanowallet.ui.common.BaseDialogFragment;
-import co.nano.nanowallet.ui.common.KeyboardUtil;
-import co.nano.nanowallet.ui.common.WindowControl;
-import co.nano.nanowallet.util.SharedPreferencesUtil;
+import com.carteiranano.app.BuildConfig;
+import com.carteiranano.app.R;
+import com.carteiranano.app.analytics.AnalyticsEvents;
+import com.carteiranano.app.analytics.AnalyticsService;
+import com.carteiranano.app.bus.CreatePin;
+import com.carteiranano.app.bus.Logout;
+import com.carteiranano.app.bus.PinComplete;
+import com.carteiranano.app.bus.RxBus;
+import com.carteiranano.app.databinding.FragmentSettingsBinding;
+import com.carteiranano.app.model.AvailableCurrency;
+import com.carteiranano.app.model.Credentials;
+import com.carteiranano.app.model.StringWithTag;
+import com.carteiranano.app.network.AccountService;
+import com.carteiranano.app.ui.common.ActivityWithComponent;
+import com.carteiranano.app.ui.common.BaseDialogFragment;
+import com.carteiranano.app.ui.common.KeyboardUtil;
+import com.carteiranano.app.ui.common.WindowControl;
+import com.carteiranano.app.ui.common.UIUtil;
+import com.carteiranano.app.util.SharedPreferencesUtil;
 import io.realm.Realm;
 
 /**
@@ -261,7 +261,8 @@ public class SettingsDialogFragment extends BaseDialogFragment {
         }
     }
 
-    public class ClickHandlers {
+    public class ClickHandlers extends Activity {
+
         public void onClickLocalCurrency(View view) {
             showCurrency = !showCurrency;
             binding.setShowCurrency(showCurrency);
@@ -276,6 +277,18 @@ public class SettingsDialogFragment extends BaseDialogFragment {
             clickedNewSeed = true;
             showSeed();
         }
+
+        /*public void onClickChangeTheme(View view) {
+            /* int current_theme = sharedPreferencesUtil.getTheme();
+            if(current_theme == 1) {
+                current_theme = 0;
+            } else {
+                current_theme = 1;
+            } */
+            //UIUtil.changeToTheme(this, current_theme);
+            //clickedNewSeed = true;
+            //showSeed();
+        //}
 
         public void onClickLogOut(View view) {
             if (getActivity() instanceof WindowControl) {

@@ -17,7 +17,7 @@
 
         <variable
             name="handlers"
-            type="co.nano.nanowallet.ui.settings.SettingsDialogFragment.ClickHandlers" />
+            type="com.carteiranano.app.ui.settings.SettingsDialogFragment.ClickHandlers" />
     </data>
 
     <android.support.constraint.ConstraintLayout
@@ -103,12 +103,25 @@
             android:text="@string/settings_show_new_seed"
             app:layout_constraintTop_toBottomOf="@+id/settings_show_seed" />
 
+        <!--
+        <TextView
+            android:id="@+id/settings_change_theme"
+            style="@style/TextStyle14"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="@drawable/bg_border_top_bottom_dark"
+            android:gravity="center"
+            android:onClick="@{handlers::onClickChangeTheme}"
+            android:text="@string/settings_change_theme"
+            app:layout_constraintTop_toBottomOf="@+id/settings_show_new_seed" />
+        -->
+
         <TextView
             android:id="@+id/settings_disclaimer"
             style="@style/TextStyle20"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="84dp"
             android:alpha="0.4"
             app:layout_constraintEnd_toStartOf="@+id/settings_guideline_vert"
             app:layout_constraintStart_toStartOf="@+id/settings_guideline_vert"

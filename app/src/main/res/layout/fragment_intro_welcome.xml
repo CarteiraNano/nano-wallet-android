@@ -7,7 +7,7 @@
         <!-- Click Listeners -->
         <variable
             name="handlers"
-            type="co.nano.nanowallet.ui.intro.IntroWelcomeFragment.ClickHandlers" />
+            type="com.carteiranano.app.ui.intro.IntroWelcomeFragment.ClickHandlers" />
         <!-- Data -->
         <variable
             name="version"
@@ -31,7 +31,7 @@
             app:layout_constraintStart_toStartOf="@+id/intro_welcome_guideline_vert"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_chainStyle="packed"
-            app:srcCompat="@drawable/ic_logo" />
+            app:srcCompat="@drawable/ic_logo_intro" />
 
         <TextView
             android:id="@+id/intro_welcome_title"
@@ -75,7 +75,7 @@
             style="@style/TextStyle4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:alpha="0.35"
+            android:alpha="0.60"
             android:text="@{version}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/intro_welcome_guideline_vert"

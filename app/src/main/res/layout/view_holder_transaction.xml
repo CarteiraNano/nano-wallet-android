@@ -7,13 +7,13 @@
         <!-- Data -->
         <variable
             name="accountHistoryItem"
-            type="co.nano.nanowallet.network.model.response.AccountHistoryResponseItem" />
+            type="com.carteiranano.app.network.model.response.AccountHistoryResponseItem" />
         <variable
             name="currency"
-            type="co.nano.nanowallet.ui.home.CurrencyPagerEnum" />
+            type="com.carteiranano.app.ui.home.CurrencyPagerEnum" />
         <variable
             name="handlers"
-            type="co.nano.nanowallet.ui.home.HomeFragment.ClickHandlers" />
+            type="com.carteiranano.app.ui.home.HomeFragment.ClickHandlers" />
     </data>
 
     <android.support.constraint.ConstraintLayout

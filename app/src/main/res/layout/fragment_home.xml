@@ -6,7 +6,7 @@
         <!-- Click Listeners -->
         <variable
             name="handlers"
-            type="co.nano.nanowallet.ui.home.HomeFragment.ClickHandlers" />
+            type="com.carteiranano.app.ui.home.HomeFragment.ClickHandlers" />
     </data>
 
     <android.support.constraint.ConstraintLayout

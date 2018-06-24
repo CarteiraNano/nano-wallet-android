@@ -1,7 +1,7 @@
-package co.nano.nanowallet.ui.common;
+package com.carteiranano.app.ui.common;
 
-import co.nano.nanowallet.di.activity.ActivityComponent;
-import co.nano.nanowallet.di.application.ApplicationComponent;
+import com.carteiranano.app.di.activity.ActivityComponent;
+import com.carteiranano.app.di.application.ApplicationComponent;
 
 /**
  * Interface for Activity with a Component

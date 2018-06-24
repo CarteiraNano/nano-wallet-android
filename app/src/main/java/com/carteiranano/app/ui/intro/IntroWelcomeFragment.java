@@ -1,4 +1,4 @@
-package co.nano.nanowallet.ui.intro;
+package com.carteiranano.app.ui.intro;
 
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
@@ -6,23 +6,18 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.crashlytics.android.answers.Answers;
-import com.crashlytics.android.answers.CustomEvent;
-
 import javax.inject.Inject;
 
-import co.nano.nanowallet.BuildConfig;
-import co.nano.nanowallet.NanoUtil;
-import co.nano.nanowallet.R;
-import co.nano.nanowallet.analytics.AnalyticsEvents;
-import co.nano.nanowallet.analytics.AnalyticsService;
-import co.nano.nanowallet.databinding.FragmentIntroWelcomeBinding;
-import co.nano.nanowallet.model.Credentials;
-import co.nano.nanowallet.ui.common.ActivityWithComponent;
-import co.nano.nanowallet.ui.common.BaseFragment;
-import co.nano.nanowallet.ui.common.FragmentUtility;
-import co.nano.nanowallet.ui.common.WindowControl;
-import co.nano.nanowallet.util.SharedPreferencesUtil;
+import com.carteiranano.app.BuildConfig;
+import com.carteiranano.app.NanoUtil;
+import com.carteiranano.app.R;
+import com.carteiranano.app.databinding.FragmentIntroWelcomeBinding;
+import com.carteiranano.app.model.Credentials;
+import com.carteiranano.app.ui.common.ActivityWithComponent;
+import com.carteiranano.app.ui.common.BaseFragment;
+import com.carteiranano.app.ui.common.FragmentUtility;
+import com.carteiranano.app.ui.common.WindowControl;
+import com.carteiranano.app.util.SharedPreferencesUtil;
 import io.realm.Realm;
 
 /**

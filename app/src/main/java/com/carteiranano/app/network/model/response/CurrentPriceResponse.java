@@ -1,8 +1,8 @@
-package co.nano.nanowallet.network.model.response;
+package com.carteiranano.app.network.model.response;
 
 import com.google.gson.annotations.SerializedName;
 
-import co.nano.nanowallet.network.model.BaseResponse;
+import com.carteiranano.app.network.model.BaseResponse;
 
 /**
  * Pushed price data - currently sent every minute to all clients

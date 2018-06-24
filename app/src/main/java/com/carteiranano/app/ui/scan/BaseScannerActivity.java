@@ -1,11 +1,11 @@
-package co.nano.nanowallet.ui.scan;
+package com.carteiranano.app.ui.scan;
 
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
-import co.nano.nanowallet.R;
+import com.carteiranano.app.R;
 
 /**
  * Set up the toolbar control for the scan activity

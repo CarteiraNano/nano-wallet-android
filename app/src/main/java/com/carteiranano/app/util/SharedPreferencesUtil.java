@@ -1,12 +1,12 @@
-package co.nano.nanowallet.util;
+package com.carteiranano.app.util;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 
-import java.util.UUID;
+import com.carteiranano.app.model.AvailableCurrency;
 
-import co.nano.nanowallet.model.AvailableCurrency;
+import java.util.UUID;
 
 /**
  * Shared Preferences utility module

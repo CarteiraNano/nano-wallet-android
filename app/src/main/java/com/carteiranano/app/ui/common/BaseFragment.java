@@ -1,4 +1,4 @@
-package co.nano.nanowallet.ui.common;
+package com.carteiranano.app.ui.common;
 
 import android.Manifest;
 import android.app.AlarmManager;
@@ -21,19 +21,19 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import co.nano.nanowallet.NanoUtil;
-import co.nano.nanowallet.R;
-import co.nano.nanowallet.analytics.AnalyticsService;
-import co.nano.nanowallet.broadcastreceiver.ClipboardAlarmReceiver;
-import co.nano.nanowallet.bus.Logout;
-import co.nano.nanowallet.bus.RxBus;
-import co.nano.nanowallet.bus.SeedCreatedWithAnotherWallet;
-import co.nano.nanowallet.model.Credentials;
-import co.nano.nanowallet.ui.pin.CreatePinDialogFragment;
-import co.nano.nanowallet.ui.pin.PinDialogFragment;
-import co.nano.nanowallet.ui.scan.ScanActivity;
-import co.nano.nanowallet.ui.send.SendFragment;
-import co.nano.nanowallet.util.ExceptionHandler;
+import com.carteiranano.app.NanoUtil;
+import com.carteiranano.app.R;
+import com.carteiranano.app.analytics.AnalyticsService;
+import com.carteiranano.app.broadcastreceiver.ClipboardAlarmReceiver;
+import com.carteiranano.app.bus.Logout;
+import com.carteiranano.app.bus.RxBus;
+import com.carteiranano.app.bus.SeedCreatedWithAnotherWallet;
+import com.carteiranano.app.model.Credentials;
+import com.carteiranano.app.ui.pin.CreatePinDialogFragment;
+import com.carteiranano.app.ui.pin.PinDialogFragment;
+import com.carteiranano.app.ui.scan.ScanActivity;
+import com.carteiranano.app.ui.send.SendFragment;
+import com.carteiranano.app.util.ExceptionHandler;
 import io.realm.Realm;
 
 /**
@@ -184,7 +184,7 @@ public class BaseFragment extends Fragment {
         // create pending intent
         AlarmManager alarmMgr = (AlarmManager) getContext().getSystemService(Context.ALARM_SERVICE);
         Intent intent = new Intent(getContext(), ClipboardAlarmReceiver.class);
-        intent.setAction("co.nano.nanowallet.alarm");
+        intent.setAction("com.carteiranano.app.alarm");
         PendingIntent alarmIntent = PendingIntent.getBroadcast(getContext(), 0, intent, 0);
 
         // set a two minute alarm to start the pending intent

@@ -1,10 +1,10 @@
-package co.nano.nanowallet;
+package com.carteiranano.app;
 
 /*
   Utilities for crypto functions
  */
 
-import co.nano.nanowallet.util.SecureRandomUtil;
+import com.carteiranano.app.util.SecureRandomUtil;
 import org.libsodium.jni.NaCl;
 import org.libsodium.jni.Sodium;
 

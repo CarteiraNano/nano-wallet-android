@@ -1,4 +1,4 @@
-package co.nano.nanowallet.bus;
+package com.carteiranano.app.bus;
 
 /**
  * Event sent when invalid amount is sent

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="co.nano.nanowallet">
+    package="com.carteiranano.app">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA" />
@@ -15,7 +15,7 @@
         android:required="false" />
 
     <application
-        android:name=".NanoApplication"
+        android:name="com.carteiranano.app.NanoApplication"
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -25,7 +25,7 @@
         android:theme="@style/AppTheme"
         tools:replace="android:allowBackup">
         <activity
-            android:name=".MainActivity"
+            android:name="com.carteiranano.app.MainActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden">
             <intent-filter>
@@ -35,19 +35,19 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.scan.ScanActivity"
+            android:name="com.carteiranano.app.ui.scan.ScanActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppOverlayTheme" />
 
-        <receiver android:name=".broadcastreceiver.ClipboardAlarmReceiver">
+        <receiver android:name="com.carteiranano.app.broadcastreceiver.ClipboardAlarmReceiver">
             <intent-filter>
-                <action android:name="co.nano.nanowallet.alarm" />
+                <action android:name="com.carteiranano.app.alarm" />
             </intent-filter>
         </receiver>
 
         <provider
             android:name="android.support.v4.content.FileProvider"
-            android:authorities="co.nano.nanowallet.fileprovider"
+            android:authorities="com.carteiranano.app.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data

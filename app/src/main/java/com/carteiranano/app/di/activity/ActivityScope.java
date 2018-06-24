@@ -1,4 +1,4 @@
-package co.nano.nanowallet.di.activity;
+package com.carteiranano.app.di.activity;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

@@ -1,4 +1,4 @@
-package co.nano.nanowallet.ui.common;
+package com.carteiranano.app.ui.common;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -7,8 +7,10 @@ import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.style.ForegroundColorSpan;
 import android.util.DisplayMetrics;
+import android.app.Activity;
+import android.content.Intent;
 
-import co.nano.nanowallet.R;
+import com.carteiranano.app.R;
 
 /**
  * UI Utility Functions
@@ -28,7 +30,7 @@ public class UIUtil {
             return;
         }
         if (s.length() > 0) {
-            s.setSpan(new ForegroundColorSpan(ContextCompat.getColor(context, R.color.dark_sky_blue)), 0, s.length() > 8 ? 9 : s.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+            s.setSpan(new ForegroundColorSpan(ContextCompat.getColor(context, R.color.gray)), 0, s.length() > 8 ? 9 : s.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
             if (s.length() > 59) {
                 s.setSpan(new ForegroundColorSpan(ContextCompat.getColor(context, R.color.burnt_yellow)), 59, s.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
             }
@@ -48,7 +50,7 @@ public class UIUtil {
             return;
         }
         s.setSpan(new ForegroundColorSpan(ContextCompat.getColor(context, R.color.bright_white)), 0, s.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-        s.setSpan(new ForegroundColorSpan(ContextCompat.getColor(context, R.color.dark_sky_blue)), 0, s.length() > 4 ? 5 : s.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+        s.setSpan(new ForegroundColorSpan(ContextCompat.getColor(context, R.color.gray)), 0, s.length() > 4 ? 5 : s.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
         if (s.length() > 59) {
             s.setSpan(new ForegroundColorSpan(ContextCompat.getColor(context, R.color.burnt_yellow)), 59, s.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
         }
@@ -95,4 +97,9 @@ public class UIUtil {
         DisplayMetrics metrics = resources.getDisplayMetrics();
         return px / ((float) metrics.densityDpi / DisplayMetrics.DENSITY_DEFAULT);
     }
+
+    private static int sTheme;
+
+    public final static int THEME_DEFAULT = 0;
+    public final static int THEME_GREEN = 1;
 }

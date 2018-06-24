@@ -1,4 +1,4 @@
-package co.nano.nanowallet.ui.webview;
+package com.carteiranano.app.ui.webview;
 
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
@@ -13,10 +13,10 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
 
-import co.nano.nanowallet.R;
-import co.nano.nanowallet.databinding.FragmentWebviewBinding;
-import co.nano.nanowallet.ui.common.BaseDialogFragment;
-import co.nano.nanowallet.ui.common.KeyboardUtil;
+import com.carteiranano.app.R;
+import com.carteiranano.app.databinding.FragmentWebviewBinding;
+import com.carteiranano.app.ui.common.BaseDialogFragment;
+import com.carteiranano.app.ui.common.KeyboardUtil;
 
 /**
  * Webview

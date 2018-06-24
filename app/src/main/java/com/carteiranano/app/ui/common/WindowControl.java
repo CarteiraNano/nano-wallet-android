@@ -1,4 +1,4 @@
-package co.nano.nanowallet.ui.common;
+package com.carteiranano.app.ui.common;
 
 import android.view.View;
 

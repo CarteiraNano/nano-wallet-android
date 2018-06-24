@@ -1,4 +1,4 @@
-package co.nano.nanowallet.model;
+package com.carteiranano.app.model;
 
 /**
  * Class containing a string with an object tag

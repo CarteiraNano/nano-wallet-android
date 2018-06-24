@@ -1,10 +1,10 @@
-package co.nano.nanowallet.network.model.response;
+package com.carteiranano.app.network.model.response;
 
 import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
 
-import co.nano.nanowallet.network.model.BaseResponse;
+import com.carteiranano.app.network.model.BaseResponse;
 
 /**
  * Account history

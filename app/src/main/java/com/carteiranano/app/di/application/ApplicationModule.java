@@ -1,4 +1,4 @@
-package co.nano.nanowallet.di.application;
+package com.carteiranano.app.di.application;
 
 import android.content.Context;
 

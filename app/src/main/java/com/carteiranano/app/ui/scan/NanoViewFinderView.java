@@ -1,4 +1,4 @@
-package co.nano.nanowallet.ui.scan;
+package com.carteiranano.app.ui.scan;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -11,8 +11,8 @@ import android.graphics.RectF;
 import android.util.AttributeSet;
 import android.view.View;
 
-import co.nano.nanowallet.R;
-import co.nano.nanowallet.ui.common.UIUtil;
+import com.carteiranano.app.R;
+import com.carteiranano.app.ui.common.UIUtil;
 import me.dm7.barcodescanner.core.DisplayUtils;
 import me.dm7.barcodescanner.core.IViewFinder;
 

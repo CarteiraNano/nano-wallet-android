@@ -1,4 +1,4 @@
-package co.nano.nanowallet.ui.webview;
+package com.carteiranano.app.ui.webview;
 
 import android.content.Context;
 import android.util.AttributeSet;

@@ -1,12 +1,12 @@
-package co.nano.nanowallet.ui.common;
+package com.carteiranano.app.ui.common;
 
 import android.os.Parcel;
 import android.text.style.URLSpan;
 import android.view.View;
 
-import co.nano.nanowallet.bus.OpenWebView;
-import co.nano.nanowallet.bus.RxBus;
-import co.nano.nanowallet.ui.webview.WebViewDialogFragment;
+import com.carteiranano.app.bus.OpenWebView;
+import com.carteiranano.app.bus.RxBus;
+import com.carteiranano.app.ui.webview.WebViewDialogFragment;
 
 public class CustomUrlSpan extends URLSpan {
     public CustomUrlSpan(String url) {

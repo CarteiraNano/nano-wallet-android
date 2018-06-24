@@ -9,7 +9,7 @@
 
         <variable
             name="wallet"
-            type="co.nano.nanowallet.model.NanoWallet" />
+            type="com.carteiranano.app.model.NanoWallet" />
 
         <variable
             name="showAmount"
@@ -18,7 +18,7 @@
         <!-- Click Listeners -->
         <variable
             name="handlers"
-            type="co.nano.nanowallet.ui.send.SendFragment.ClickHandlers" />
+            type="com.carteiranano.app.ui.send.SendFragment.ClickHandlers" />
     </data>
 
     <android.support.constraint.ConstraintLayout
@@ -86,7 +86,7 @@
             android:id="@+id/send_amounts_background"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:background="@color/dark_sky_blue"
+            android:background="@color/send"
             app:layout_constraintBottom_toTopOf="@+id/send_guideline_keyboard_top"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/send_guideline_amounts_top" />

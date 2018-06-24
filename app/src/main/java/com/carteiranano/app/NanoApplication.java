@@ -1,19 +1,17 @@
-package co.nano.nanowallet;
+package com.carteiranano.app;
 
 import android.content.Context;
 import android.support.multidex.MultiDexApplication;
 import android.support.v7.app.AppCompatDelegate;
 import android.util.Base64;
 
-import com.crashlytics.android.Crashlytics;
-import com.crashlytics.android.answers.Answers;
 import com.github.ajalt.reprint.core.Reprint;
 
-import co.nano.nanowallet.di.application.ApplicationComponent;
-import co.nano.nanowallet.di.application.ApplicationModule;
-import co.nano.nanowallet.di.application.DaggerApplicationComponent;
-import co.nano.nanowallet.util.Vault;
-import io.fabric.sdk.android.Fabric;
+import com.carteiranano.app.di.application.ApplicationComponent;
+import com.carteiranano.app.di.application.ApplicationModule;
+import com.carteiranano.app.di.application.DaggerApplicationComponent;
+import com.carteiranano.app.util.Vault;
+
 import io.realm.Realm;
 import timber.log.Timber;
 

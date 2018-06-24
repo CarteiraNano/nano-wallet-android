@@ -1,7 +1,7 @@
 @EpoxyDataBindingPattern(rClass = R.class, layoutPrefix = "view_holder")
-package co.nano.nanowallet.ui.home;
+package com.carteiranano.app.ui.home;
 
 import com.airbnb.epoxy.EpoxyDataBindingPattern;
 
-import co.nano.nanowallet.R;
+import com.carteiranano.app.R;
 

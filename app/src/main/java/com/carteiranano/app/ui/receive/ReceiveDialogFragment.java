@@ -1,4 +1,4 @@
-package co.nano.nanowallet.ui.receive;
+package com.carteiranano.app.ui.receive;
 
 import android.content.Context;
 import android.content.Intent;
@@ -18,8 +18,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.crashlytics.android.answers.Answers;
-import com.crashlytics.android.answers.CustomEvent;
 import com.github.sumimakito.awesomeqr.AwesomeQRCode;
 
 import java.io.File;
@@ -27,16 +25,16 @@ import java.io.FileOutputStream;
 
 import javax.inject.Inject;
 
-import co.nano.nanowallet.R;
-import co.nano.nanowallet.analytics.AnalyticsEvents;
-import co.nano.nanowallet.analytics.AnalyticsService;
-import co.nano.nanowallet.broadcastreceiver.ClipboardAlarmReceiver;
-import co.nano.nanowallet.databinding.FragmentReceiveBinding;
-import co.nano.nanowallet.model.Address;
-import co.nano.nanowallet.model.Credentials;
-import co.nano.nanowallet.ui.common.ActivityWithComponent;
-import co.nano.nanowallet.ui.common.BaseDialogFragment;
-import co.nano.nanowallet.ui.common.UIUtil;
+import com.carteiranano.app.R;
+import com.carteiranano.app.analytics.AnalyticsEvents;
+import com.carteiranano.app.analytics.AnalyticsService;
+import com.carteiranano.app.broadcastreceiver.ClipboardAlarmReceiver;
+import com.carteiranano.app.databinding.FragmentReceiveBinding;
+import com.carteiranano.app.model.Address;
+import com.carteiranano.app.model.Credentials;
+import com.carteiranano.app.ui.common.ActivityWithComponent;
+import com.carteiranano.app.ui.common.BaseDialogFragment;
+import com.carteiranano.app.ui.common.UIUtil;
 import io.realm.Realm;
 
 /**
@@ -47,7 +45,7 @@ public class ReceiveDialogFragment extends BaseDialogFragment {
     public static String TAG = ReceiveDialogFragment.class.getSimpleName();
     private static final int QRCODE_SIZE = 240;
     private static final String TEMP_FILE_NAME = "nanoreceive.png";
-    private static final String ADDRESS_KEY = "co.nano.nanowallet.ui.receive.ReceiveDialogFragment.Address";
+    private static final String ADDRESS_KEY = "com.carteiranano.app.ui.receive.ReceiveDialogFragment.Address";
     private Address address;
     private String fileName;
 
@@ -183,7 +181,7 @@ public class ReceiveDialogFragment extends BaseDialogFragment {
             saveImage(setViewToBitmapImage(binding.receiveCard.cardLayout));
             File imagePath = new File(getContext().getCacheDir(), "images");
             File newFile = new File(imagePath, fileName);
-            Uri imageUri = FileProvider.getUriForFile(getContext(), "co.nano.nanowallet.fileprovider", newFile);
+            Uri imageUri = FileProvider.getUriForFile(getContext(), "com.carteiranano.app.fileprovider", newFile);
             Intent shareIntent = new Intent(Intent.ACTION_SEND);
             shareIntent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
             shareIntent.putExtra(Intent.EXTRA_TEXT, address.getAddress());

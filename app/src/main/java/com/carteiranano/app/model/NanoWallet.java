@@ -1,4 +1,4 @@
-package co.nano.nanowallet.model;
+package com.carteiranano.app.model;
 
 import android.content.Context;
 
@@ -16,21 +16,21 @@ import java.util.Locale;
 
 import javax.inject.Inject;
 
-import co.nano.nanowallet.NanoUtil;
-import co.nano.nanowallet.bus.RxBus;
-import co.nano.nanowallet.bus.SendInvalidAmount;
-import co.nano.nanowallet.bus.WalletClear;
-import co.nano.nanowallet.bus.WalletHistoryUpdate;
-import co.nano.nanowallet.bus.WalletPriceUpdate;
-import co.nano.nanowallet.bus.WalletSubscribeUpdate;
-import co.nano.nanowallet.network.model.response.AccountHistoryResponse;
-import co.nano.nanowallet.network.model.response.AccountHistoryResponseItem;
-import co.nano.nanowallet.network.model.response.CurrentPriceResponse;
-import co.nano.nanowallet.network.model.response.SubscribeResponse;
-import co.nano.nanowallet.ui.common.ActivityWithComponent;
-import co.nano.nanowallet.util.ExceptionHandler;
-import co.nano.nanowallet.util.NumberUtil;
-import co.nano.nanowallet.util.SharedPreferencesUtil;
+import com.carteiranano.app.NanoUtil;
+import com.carteiranano.app.bus.RxBus;
+import com.carteiranano.app.bus.SendInvalidAmount;
+import com.carteiranano.app.bus.WalletClear;
+import com.carteiranano.app.bus.WalletHistoryUpdate;
+import com.carteiranano.app.bus.WalletPriceUpdate;
+import com.carteiranano.app.bus.WalletSubscribeUpdate;
+import com.carteiranano.app.network.model.response.AccountHistoryResponse;
+import com.carteiranano.app.network.model.response.AccountHistoryResponseItem;
+import com.carteiranano.app.network.model.response.CurrentPriceResponse;
+import com.carteiranano.app.network.model.response.SubscribeResponse;
+import com.carteiranano.app.ui.common.ActivityWithComponent;
+import com.carteiranano.app.util.ExceptionHandler;
+import com.carteiranano.app.util.NumberUtil;
+import com.carteiranano.app.util.SharedPreferencesUtil;
 import io.realm.Realm;
 
 

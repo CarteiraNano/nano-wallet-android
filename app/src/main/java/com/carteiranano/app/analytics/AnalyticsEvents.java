@@ -1,4 +1,4 @@
-package co.nano.nanowallet.analytics;
+package com.carteiranano.app.analytics;
 
 public class AnalyticsEvents {
     public static final String BAD_SEED_VIEWED = "Alert for bad seed viewed";

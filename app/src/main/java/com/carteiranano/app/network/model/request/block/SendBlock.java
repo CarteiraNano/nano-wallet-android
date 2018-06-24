@@ -1,11 +1,11 @@
-package co.nano.nanowallet.network.model.request.block;
+package com.carteiranano.app.network.model.request.block;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import co.nano.nanowallet.NanoUtil;
-import co.nano.nanowallet.network.model.BlockTypes;
-import co.nano.nanowallet.util.NumberUtil;
+import com.carteiranano.app.NanoUtil;
+import com.carteiranano.app.network.model.BlockTypes;
+import com.carteiranano.app.util.NumberUtil;
 
 /**
  * Send BlockItem

@@ -1,4 +1,4 @@
-package co.nano.nanowallet.ui.pin;
+package com.carteiranano.app.ui.pin;
 
 import android.app.Activity;
 import android.content.Context;
@@ -11,19 +11,15 @@ import android.view.ViewGroup;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputMethodManager;
 
-import com.crashlytics.android.answers.Answers;
-import com.crashlytics.android.answers.CustomEvent;
-
 import javax.inject.Inject;
 
-import co.nano.nanowallet.R;
-import co.nano.nanowallet.analytics.AnalyticsEvents;
-import co.nano.nanowallet.analytics.AnalyticsService;
-import co.nano.nanowallet.bus.CreatePin;
-import co.nano.nanowallet.bus.RxBus;
-import co.nano.nanowallet.databinding.FragmentCreatePinBinding;
-import co.nano.nanowallet.ui.common.ActivityWithComponent;
-import co.nano.nanowallet.ui.common.BaseDialogFragment;
+import com.carteiranano.app.R;
+import com.carteiranano.app.analytics.AnalyticsService;
+import com.carteiranano.app.bus.CreatePin;
+import com.carteiranano.app.bus.RxBus;
+import com.carteiranano.app.databinding.FragmentCreatePinBinding;
+import com.carteiranano.app.ui.common.ActivityWithComponent;
+import com.carteiranano.app.ui.common.BaseDialogFragment;
 
 /**
  * Settings main screen

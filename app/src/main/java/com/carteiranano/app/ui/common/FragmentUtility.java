@@ -1,4 +1,4 @@
-package co.nano.nanowallet.ui.common;
+package com.carteiranano.app.ui.common;
 
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -6,8 +6,8 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 
-import co.nano.nanowallet.R;
-import co.nano.nanowallet.util.ExceptionHandler;
+import com.carteiranano.app.R;
+import com.carteiranano.app.util.ExceptionHandler;
 
 /**
  * Utility methods for adding and replacing fragment transitions and animations

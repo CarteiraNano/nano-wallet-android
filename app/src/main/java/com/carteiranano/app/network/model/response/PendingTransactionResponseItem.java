@@ -1,8 +1,8 @@
-package co.nano.nanowallet.network.model.response;
+package com.carteiranano.app.network.model.response;
 
 import com.google.gson.annotations.SerializedName;
 
-import co.nano.nanowallet.util.NumberUtil;
+import com.carteiranano.app.util.NumberUtil;
 
 /**
  * Account History Item

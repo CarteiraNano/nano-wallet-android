@@ -1,4 +1,4 @@
-package co.nano.nanowallet.network.model;
+package com.carteiranano.app.network.model;
 
 /**
  * Available Websocket Actions

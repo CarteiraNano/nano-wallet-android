@@ -1,10 +1,10 @@
-package co.nano.nanowallet.model;
+package com.carteiranano.app.model;
 
 import java.util.Arrays;
 import java.util.List;
 
-import co.nano.nanowallet.NanoUtil;
-import co.nano.nanowallet.util.ExceptionHandler;
+import com.carteiranano.app.NanoUtil;
+import com.carteiranano.app.util.ExceptionHandler;
 import io.realm.RealmObject;
 
 /**

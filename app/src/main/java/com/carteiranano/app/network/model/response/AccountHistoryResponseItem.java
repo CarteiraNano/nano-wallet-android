@@ -1,12 +1,12 @@
-package co.nano.nanowallet.network.model.response;
+package com.carteiranano.app.network.model.response;
 
 import android.text.Spannable;
 
 import com.google.gson.annotations.SerializedName;
 
-import co.nano.nanowallet.model.Address;
-import co.nano.nanowallet.network.model.BlockTypes;
-import co.nano.nanowallet.util.NumberUtil;
+import com.carteiranano.app.model.Address;
+import com.carteiranano.app.network.model.BlockTypes;
+import com.carteiranano.app.util.NumberUtil;
 
 /**
  * Account History Item

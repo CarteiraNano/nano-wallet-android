@@ -1,16 +1,16 @@
-package co.nano.nanowallet.di.persistence;
+package com.carteiranano.app.di.persistence;
 
 import android.content.Context;
 import android.util.Base64;
 
 import javax.inject.Named;
 
-import co.nano.nanowallet.bus.Logout;
-import co.nano.nanowallet.bus.RxBus;
-import co.nano.nanowallet.db.Migration;
-import co.nano.nanowallet.di.application.ApplicationScope;
-import co.nano.nanowallet.util.SharedPreferencesUtil;
-import co.nano.nanowallet.util.Vault;
+import com.carteiranano.app.bus.Logout;
+import com.carteiranano.app.bus.RxBus;
+import com.carteiranano.app.db.Migration;
+import com.carteiranano.app.di.application.ApplicationScope;
+import com.carteiranano.app.util.SharedPreferencesUtil;
+import com.carteiranano.app.util.Vault;
 import dagger.Module;
 import dagger.Provides;
 import io.realm.Realm;

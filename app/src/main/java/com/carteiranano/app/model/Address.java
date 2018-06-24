@@ -1,4 +1,4 @@
-package co.nano.nanowallet.model;
+package com.carteiranano.app.model;
 
 import android.graphics.Color;
 import android.net.Uri;
@@ -52,7 +52,7 @@ public class Address implements Serializable {
         int backStartIndex = s.length() - 5;
 
         // colorize the string
-        s.setSpan(new ForegroundColorSpan(Color.parseColor("#4a90e2")), frontStartIndex, frontEndIndex, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+        s.setSpan(new ForegroundColorSpan(Color.parseColor("#498b00")), frontStartIndex, frontEndIndex, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
         s.setSpan(new ForegroundColorSpan(Color.parseColor("#e1990e")), backStartIndex, s.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
         return s;
     }

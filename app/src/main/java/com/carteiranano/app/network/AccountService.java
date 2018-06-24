@@ -1,4 +1,4 @@
-package co.nano.nanowallet.network;
+package com.carteiranano.app.network;
 
 import android.content.Context;
 import android.os.Handler;
@@ -23,40 +23,40 @@ import javax.annotation.Nullable;
 import javax.inject.Inject;
 import javax.inject.Named;
 
-import co.nano.nanowallet.BuildConfig;
-import co.nano.nanowallet.NanoUtil;
-import co.nano.nanowallet.bus.RxBus;
-import co.nano.nanowallet.bus.SocketError;
-import co.nano.nanowallet.model.Address;
-import co.nano.nanowallet.model.Credentials;
-import co.nano.nanowallet.model.NanoWallet;
-import co.nano.nanowallet.model.PreconfiguredRepresentatives;
-import co.nano.nanowallet.network.model.BaseResponse;
-import co.nano.nanowallet.network.model.BlockTypes;
-import co.nano.nanowallet.network.model.RequestItem;
-import co.nano.nanowallet.network.model.request.AccountHistoryRequest;
-import co.nano.nanowallet.network.model.request.GetBlockRequest;
-import co.nano.nanowallet.network.model.request.PendingTransactionsRequest;
-import co.nano.nanowallet.network.model.request.ProcessRequest;
-import co.nano.nanowallet.network.model.request.SubscribeRequest;
-import co.nano.nanowallet.network.model.request.WorkRequest;
-import co.nano.nanowallet.network.model.request.block.Block;
-import co.nano.nanowallet.network.model.request.block.OpenBlock;
-import co.nano.nanowallet.network.model.request.block.ReceiveBlock;
-import co.nano.nanowallet.network.model.request.block.SendBlock;
-import co.nano.nanowallet.network.model.request.block.StateBlock;
-import co.nano.nanowallet.network.model.response.BlockResponse;
-import co.nano.nanowallet.network.model.response.CurrentPriceResponse;
-import co.nano.nanowallet.network.model.response.PendingTransactionResponseItem;
-import co.nano.nanowallet.network.model.response.ProcessResponse;
-import co.nano.nanowallet.network.model.response.SubscribeResponse;
-import co.nano.nanowallet.network.model.response.TransactionResponse;
-import co.nano.nanowallet.network.model.response.WarningResponse;
-import co.nano.nanowallet.network.model.response.WorkResponse;
-import co.nano.nanowallet.ui.common.ActivityWithComponent;
-import co.nano.nanowallet.util.ExceptionHandler;
-import co.nano.nanowallet.util.NumberUtil;
-import co.nano.nanowallet.util.SharedPreferencesUtil;
+import com.carteiranano.app.BuildConfig;
+import com.carteiranano.app.NanoUtil;
+import com.carteiranano.app.bus.RxBus;
+import com.carteiranano.app.bus.SocketError;
+import com.carteiranano.app.model.Address;
+import com.carteiranano.app.model.Credentials;
+import com.carteiranano.app.model.NanoWallet;
+import com.carteiranano.app.model.PreconfiguredRepresentatives;
+import com.carteiranano.app.network.model.BaseResponse;
+import com.carteiranano.app.network.model.BlockTypes;
+import com.carteiranano.app.network.model.RequestItem;
+import com.carteiranano.app.network.model.request.AccountHistoryRequest;
+import com.carteiranano.app.network.model.request.GetBlockRequest;
+import com.carteiranano.app.network.model.request.PendingTransactionsRequest;
+import com.carteiranano.app.network.model.request.ProcessRequest;
+import com.carteiranano.app.network.model.request.SubscribeRequest;
+import com.carteiranano.app.network.model.request.WorkRequest;
+import com.carteiranano.app.network.model.request.block.Block;
+import com.carteiranano.app.network.model.request.block.OpenBlock;
+import com.carteiranano.app.network.model.request.block.ReceiveBlock;
+import com.carteiranano.app.network.model.request.block.SendBlock;
+import com.carteiranano.app.network.model.request.block.StateBlock;
+import com.carteiranano.app.network.model.response.BlockResponse;
+import com.carteiranano.app.network.model.response.CurrentPriceResponse;
+import com.carteiranano.app.network.model.response.PendingTransactionResponseItem;
+import com.carteiranano.app.network.model.response.ProcessResponse;
+import com.carteiranano.app.network.model.response.SubscribeResponse;
+import com.carteiranano.app.network.model.response.TransactionResponse;
+import com.carteiranano.app.network.model.response.WarningResponse;
+import com.carteiranano.app.network.model.response.WorkResponse;
+import com.carteiranano.app.ui.common.ActivityWithComponent;
+import com.carteiranano.app.util.ExceptionHandler;
+import com.carteiranano.app.util.NumberUtil;
+import com.carteiranano.app.util.SharedPreferencesUtil;
 import io.realm.Realm;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
@@ -130,7 +130,10 @@ public class AccountService {
                 .pingInterval(TIMEOUT_MILLISECONDS, TimeUnit.MILLISECONDS)
                 .build();
 
-        Request request = new Request.Builder().url(BuildConfig.CONNECTION_URL).build();
+        Request request = new Request.Builder()
+                .url(BuildConfig.CONNECTION_URL)
+                .addHeader("X-Client-Version", String.valueOf(BuildConfig.VERSION_CODE))
+                .build();
 
         WebSocketListener listener = new WebSocketListener() {
             @Override

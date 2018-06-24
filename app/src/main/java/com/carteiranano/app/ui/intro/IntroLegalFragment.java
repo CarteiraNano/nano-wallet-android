@@ -1,4 +1,4 @@
-package co.nano.nanowallet.ui.intro;
+package com.carteiranano.app.ui.intro;
 
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
@@ -23,22 +23,22 @@ import java.util.Locale;
 
 import javax.inject.Inject;
 
-import co.nano.nanowallet.R;
-import co.nano.nanowallet.analytics.AnalyticsEvents;
-import co.nano.nanowallet.analytics.AnalyticsService;
-import co.nano.nanowallet.bus.AcceptAgreement;
-import co.nano.nanowallet.bus.Logout;
-import co.nano.nanowallet.bus.RxBus;
-import co.nano.nanowallet.databinding.FragmentIntroLegalBinding;
-import co.nano.nanowallet.model.Credentials;
-import co.nano.nanowallet.network.AccountService;
-import co.nano.nanowallet.ui.common.ActivityWithComponent;
-import co.nano.nanowallet.ui.common.BaseFragment;
-import co.nano.nanowallet.ui.common.FragmentUtility;
-import co.nano.nanowallet.ui.common.WindowControl;
-import co.nano.nanowallet.ui.home.HomeFragment;
-import co.nano.nanowallet.ui.webview.WebViewAgreementDialogFragment;
-import co.nano.nanowallet.util.SharedPreferencesUtil;
+import com.carteiranano.app.R;
+import com.carteiranano.app.analytics.AnalyticsEvents;
+import com.carteiranano.app.analytics.AnalyticsService;
+import com.carteiranano.app.bus.AcceptAgreement;
+import com.carteiranano.app.bus.Logout;
+import com.carteiranano.app.bus.RxBus;
+import com.carteiranano.app.databinding.FragmentIntroLegalBinding;
+import com.carteiranano.app.model.Credentials;
+import com.carteiranano.app.network.AccountService;
+import com.carteiranano.app.ui.common.ActivityWithComponent;
+import com.carteiranano.app.ui.common.BaseFragment;
+import com.carteiranano.app.ui.common.FragmentUtility;
+import com.carteiranano.app.ui.common.WindowControl;
+import com.carteiranano.app.ui.home.HomeFragment;
+import com.carteiranano.app.ui.webview.WebViewAgreementDialogFragment;
+import com.carteiranano.app.util.SharedPreferencesUtil;
 import io.realm.Realm;
 
 /**

@@ -1,4 +1,4 @@
-package co.nano.nanowallet.ui.intro;
+package com.carteiranano.app.ui.intro;
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -17,22 +17,22 @@ import java.util.HashMap;
 
 import javax.inject.Inject;
 
-import co.nano.nanowallet.R;
-import co.nano.nanowallet.analytics.AnalyticsEvents;
-import co.nano.nanowallet.analytics.AnalyticsService;
-import co.nano.nanowallet.broadcastreceiver.ClipboardAlarmReceiver;
-import co.nano.nanowallet.bus.CreatePin;
-import co.nano.nanowallet.bus.RxBus;
-import co.nano.nanowallet.databinding.FragmentIntroNewWalletBinding;
-import co.nano.nanowallet.model.Credentials;
-import co.nano.nanowallet.network.AccountService;
-import co.nano.nanowallet.ui.common.ActivityWithComponent;
-import co.nano.nanowallet.ui.common.BaseFragment;
-import co.nano.nanowallet.ui.common.FragmentUtility;
-import co.nano.nanowallet.ui.common.WindowControl;
-import co.nano.nanowallet.ui.home.HomeFragment;
-import co.nano.nanowallet.util.ExceptionHandler;
-import co.nano.nanowallet.util.SharedPreferencesUtil;
+import com.carteiranano.app.R;
+import com.carteiranano.app.analytics.AnalyticsEvents;
+import com.carteiranano.app.analytics.AnalyticsService;
+import com.carteiranano.app.broadcastreceiver.ClipboardAlarmReceiver;
+import com.carteiranano.app.bus.CreatePin;
+import com.carteiranano.app.bus.RxBus;
+import com.carteiranano.app.databinding.FragmentIntroNewWalletBinding;
+import com.carteiranano.app.model.Credentials;
+import com.carteiranano.app.network.AccountService;
+import com.carteiranano.app.ui.common.ActivityWithComponent;
+import com.carteiranano.app.ui.common.BaseFragment;
+import com.carteiranano.app.ui.common.FragmentUtility;
+import com.carteiranano.app.ui.common.WindowControl;
+import com.carteiranano.app.ui.home.HomeFragment;
+import com.carteiranano.app.util.ExceptionHandler;
+import com.carteiranano.app.util.SharedPreferencesUtil;
 import io.realm.Realm;
 
 /**

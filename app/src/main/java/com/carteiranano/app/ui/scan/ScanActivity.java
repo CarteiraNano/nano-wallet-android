@@ -1,4 +1,4 @@
-package co.nano.nanowallet.ui.scan;
+package com.carteiranano.app.ui.scan;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,8 +10,8 @@ import android.widget.Toast;
 
 import com.google.zxing.Result;
 
-import co.nano.nanowallet.R;
-import co.nano.nanowallet.model.Credentials;
+import com.carteiranano.app.R;
+import com.carteiranano.app.model.Credentials;
 import me.dm7.barcodescanner.core.IViewFinder;
 import me.dm7.barcodescanner.zxing.ZXingScannerView;
 

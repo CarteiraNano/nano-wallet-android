@@ -1,22 +1,21 @@
-package co.nano.nanowallet.di.activity;
+package com.carteiranano.app.di.activity;
 
 import com.google.gson.Gson;
 
-import co.nano.nanowallet.MainActivity;
-import co.nano.nanowallet.analytics.AnalyticsService;
-import co.nano.nanowallet.di.application.ApplicationComponent;
-import co.nano.nanowallet.model.NanoWallet;
-import co.nano.nanowallet.network.AccountService;
-import co.nano.nanowallet.ui.home.HomeFragment;
-import co.nano.nanowallet.ui.intro.IntroLegalFragment;
-import co.nano.nanowallet.ui.intro.IntroNewWalletFragment;
-import co.nano.nanowallet.ui.intro.IntroSeedFragment;
-import co.nano.nanowallet.ui.intro.IntroWelcomeFragment;
-import co.nano.nanowallet.ui.pin.CreatePinDialogFragment;
-import co.nano.nanowallet.ui.pin.PinDialogFragment;
-import co.nano.nanowallet.ui.receive.ReceiveDialogFragment;
-import co.nano.nanowallet.ui.send.SendFragment;
-import co.nano.nanowallet.ui.settings.SettingsDialogFragment;
+import com.carteiranano.app.MainActivity;
+import com.carteiranano.app.di.application.ApplicationComponent;
+import com.carteiranano.app.model.NanoWallet;
+import com.carteiranano.app.network.AccountService;
+import com.carteiranano.app.ui.home.HomeFragment;
+import com.carteiranano.app.ui.intro.IntroLegalFragment;
+import com.carteiranano.app.ui.intro.IntroNewWalletFragment;
+import com.carteiranano.app.ui.intro.IntroSeedFragment;
+import com.carteiranano.app.ui.intro.IntroWelcomeFragment;
+import com.carteiranano.app.ui.pin.CreatePinDialogFragment;
+import com.carteiranano.app.ui.pin.PinDialogFragment;
+import com.carteiranano.app.ui.receive.ReceiveDialogFragment;
+import com.carteiranano.app.ui.send.SendFragment;
+import com.carteiranano.app.ui.settings.SettingsDialogFragment;
 import dagger.Component;
 
 @Component(modules = {ActivityModule.class}, dependencies = {ApplicationComponent.class})

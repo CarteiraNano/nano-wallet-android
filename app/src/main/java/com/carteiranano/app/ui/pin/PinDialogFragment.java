@@ -1,4 +1,4 @@
-package co.nano.nanowallet.ui.pin;
+package com.carteiranano.app.ui.pin;
 
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
@@ -9,21 +9,19 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.andrognito.pinlockview.PinLockListener;
-import com.crashlytics.android.answers.Answers;
-import com.crashlytics.android.answers.CustomEvent;
 
 import javax.inject.Inject;
 
-import co.nano.nanowallet.R;
-import co.nano.nanowallet.analytics.AnalyticsEvents;
-import co.nano.nanowallet.analytics.AnalyticsService;
-import co.nano.nanowallet.bus.PinChange;
-import co.nano.nanowallet.bus.PinComplete;
-import co.nano.nanowallet.bus.RxBus;
-import co.nano.nanowallet.databinding.FragmentPinBinding;
-import co.nano.nanowallet.model.Credentials;
-import co.nano.nanowallet.ui.common.ActivityWithComponent;
-import co.nano.nanowallet.ui.common.BaseDialogFragment;
+import com.carteiranano.app.R;
+import com.carteiranano.app.analytics.AnalyticsEvents;
+import com.carteiranano.app.analytics.AnalyticsService;
+import com.carteiranano.app.bus.PinChange;
+import com.carteiranano.app.bus.PinComplete;
+import com.carteiranano.app.bus.RxBus;
+import com.carteiranano.app.databinding.FragmentPinBinding;
+import com.carteiranano.app.model.Credentials;
+import com.carteiranano.app.ui.common.ActivityWithComponent;
+import com.carteiranano.app.ui.common.BaseDialogFragment;
 import io.realm.Realm;
 import timber.log.Timber;
 

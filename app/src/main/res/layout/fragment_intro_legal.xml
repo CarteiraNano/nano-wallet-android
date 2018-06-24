@@ -6,7 +6,7 @@
         <!-- Click Listeners -->
         <variable
             name="handlers"
-            type="co.nano.nanowallet.ui.intro.IntroLegalFragment.ClickHandlers" />
+            type="com.carteiranano.app.ui.intro.IntroLegalFragment.ClickHandlers" />
         <!-- Data -->
         <variable
             name="seed"

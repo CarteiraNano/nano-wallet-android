@@ -1,4 +1,4 @@
-package co.nano.nanowallet.analytics;
+package com.carteiranano.app.analytics;
 
 
 import android.content.Context;
@@ -11,7 +11,7 @@ import com.crashlytics.android.core.CrashlyticsCore;
 import java.util.HashMap;
 import java.util.Map;
 
-import co.nano.nanowallet.model.Credentials;
+import com.carteiranano.app.model.Credentials;
 import io.fabric.sdk.android.Fabric;
 import io.realm.Realm;
 

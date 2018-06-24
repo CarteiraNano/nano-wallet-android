@@ -8,7 +8,7 @@
         <!-- Click Listeners -->
         <variable
             name="handlers"
-            type="co.nano.nanowallet.ui.webview.WebViewAgreementDialogFragment.ClickHandlers" />
+            type="com.carteiranano.app.ui.webview.WebViewAgreementDialogFragment.ClickHandlers" />
     </data>
 
     <android.support.constraint.ConstraintLayout
@@ -51,7 +51,7 @@
             app:layout_constraintBottom_toTopOf="@+id/webview_agreement_accept_button_layout"
             app:layout_constraintTop_toBottomOf="@+id/appBarLayout">
 
-            <co.nano.nanowallet.ui.webview.ObservableWebView
+            <com.carteiranano.app.ui.webview.ObservableWebView
                 android:id="@+id/webview_agreement_webview"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />

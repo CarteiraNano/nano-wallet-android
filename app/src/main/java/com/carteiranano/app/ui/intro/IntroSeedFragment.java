@@ -1,4 +1,4 @@
-package co.nano.nanowallet.ui.intro;
+package com.carteiranano.app.ui.intro;
 
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
@@ -15,19 +15,19 @@ import com.hwangjr.rxbus.annotation.Subscribe;
 
 import javax.inject.Inject;
 
-import co.nano.nanowallet.R;
-import co.nano.nanowallet.bus.CreatePin;
-import co.nano.nanowallet.bus.RxBus;
-import co.nano.nanowallet.databinding.FragmentIntroSeedBinding;
-import co.nano.nanowallet.model.Credentials;
-import co.nano.nanowallet.network.AccountService;
-import co.nano.nanowallet.ui.common.ActivityWithComponent;
-import co.nano.nanowallet.ui.common.BaseFragment;
-import co.nano.nanowallet.ui.common.FragmentUtility;
-import co.nano.nanowallet.ui.common.UIUtil;
-import co.nano.nanowallet.ui.common.WindowControl;
-import co.nano.nanowallet.ui.scan.ScanActivity;
-import co.nano.nanowallet.util.SharedPreferencesUtil;
+import com.carteiranano.app.R;
+import com.carteiranano.app.bus.CreatePin;
+import com.carteiranano.app.bus.RxBus;
+import com.carteiranano.app.databinding.FragmentIntroSeedBinding;
+import com.carteiranano.app.model.Credentials;
+import com.carteiranano.app.network.AccountService;
+import com.carteiranano.app.ui.common.ActivityWithComponent;
+import com.carteiranano.app.ui.common.BaseFragment;
+import com.carteiranano.app.ui.common.FragmentUtility;
+import com.carteiranano.app.ui.common.UIUtil;
+import com.carteiranano.app.ui.common.WindowControl;
+import com.carteiranano.app.ui.scan.ScanActivity;
+import com.carteiranano.app.util.SharedPreferencesUtil;
 import io.realm.Realm;
 
 import static android.app.Activity.RESULT_OK;

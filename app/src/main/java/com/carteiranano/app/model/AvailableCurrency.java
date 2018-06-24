@@ -1,4 +1,4 @@
-package co.nano.nanowallet.model;
+package com.carteiranano.app.model;
 
 import java.util.Locale;
 
@@ -34,8 +34,6 @@ public enum AvailableCurrency {
         switch (iso4217Code) {
             case "AUD":
                 return "Australian Dollar";
-            case "BRL":
-                return "Brazilian Real";
             case "CAD":
                 return "Canadian Dollar";
             case "CHF":
@@ -95,8 +93,10 @@ public enum AvailableCurrency {
             case "ZAR":
                 return "South African Rand";
             case "USD":
-            default:
                 return "US Dollar";
+            case "BRL":
+            default:
+                return "Brazilian Real";
         }
     }
 
@@ -174,8 +174,6 @@ public enum AvailableCurrency {
         switch (iso4217Code) {
             case "AUD":
                 return new Locale("en", "US");
-            case "BRL":
-                return new Locale("en", "BR");
             case "CAD":
                 return new Locale("en", "US");
             case "CHF":
@@ -235,8 +233,11 @@ public enum AvailableCurrency {
             case "ZAR":
                 return new Locale("pt", "BR");
             case "USD":
-            default:
                 return new Locale("en", "US");
+            case "BRL":
+            default:
+                return new Locale("pt", "BR");
+
         }
     }
 }

@@ -1,4 +1,4 @@
-package co.nano.nanowallet.ui.common;
+package com.carteiranano.app.ui.common;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;
@@ -15,11 +15,11 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.widget.TextView;
 
-import co.nano.nanowallet.R;
-import co.nano.nanowallet.broadcastreceiver.ClipboardAlarmReceiver;
-import co.nano.nanowallet.ui.pin.CreatePinDialogFragment;
-import co.nano.nanowallet.ui.pin.PinDialogFragment;
-import co.nano.nanowallet.util.ExceptionHandler;
+import com.carteiranano.app.R;
+import com.carteiranano.app.broadcastreceiver.ClipboardAlarmReceiver;
+import com.carteiranano.app.ui.pin.CreatePinDialogFragment;
+import com.carteiranano.app.ui.pin.PinDialogFragment;
+import com.carteiranano.app.util.ExceptionHandler;
 
 /**
  * Base class for dialog fragments
@@ -95,7 +95,7 @@ public class BaseDialogFragment extends DialogFragment {
         // create pending intent
         AlarmManager alarmMgr = (AlarmManager) getContext().getSystemService(Context.ALARM_SERVICE);
         Intent intent = new Intent(getContext(), ClipboardAlarmReceiver.class);
-        intent.setAction("co.nano.nanowallet.alarm");
+        intent.setAction("com.carteiranano.app.alarm");
         PendingIntent alarmIntent = PendingIntent.getBroadcast(getContext(), 0, intent, 0);
 
         // set a two minute alarm to start the pending intent

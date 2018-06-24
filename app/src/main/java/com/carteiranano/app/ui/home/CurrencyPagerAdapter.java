@@ -1,4 +1,4 @@
-package co.nano.nanowallet.ui.home;
+package com.carteiranano.app.ui.home;
 
 import android.content.Context;
 import android.databinding.DataBindingUtil;
@@ -8,8 +8,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import co.nano.nanowallet.BR;
-import co.nano.nanowallet.model.NanoWallet;
+import com.carteiranano.app.BR;
+import com.carteiranano.app.model.NanoWallet;
 
 /**
  * ViewPager Adapter that is used for listing the wallet transactions on the home screen

@@ -1,4 +1,4 @@
-package co.nano.nanowallet;
+package com.carteiranano.app;
 
 import android.os.Build;
 import android.os.Bundle;
@@ -19,30 +19,30 @@ import java.util.UUID;
 
 import javax.inject.Inject;
 
-import co.nano.nanowallet.analytics.AnalyticsEvents;
-import co.nano.nanowallet.analytics.AnalyticsService;
-import co.nano.nanowallet.bus.HideOverlay;
-import co.nano.nanowallet.bus.Logout;
-import co.nano.nanowallet.bus.OpenWebView;
-import co.nano.nanowallet.bus.RxBus;
-import co.nano.nanowallet.bus.SeedCreatedWithAnotherWallet;
-import co.nano.nanowallet.bus.ShowOverlay;
-import co.nano.nanowallet.di.activity.ActivityComponent;
-import co.nano.nanowallet.di.activity.ActivityModule;
-import co.nano.nanowallet.di.activity.DaggerActivityComponent;
-import co.nano.nanowallet.di.application.ApplicationComponent;
-import co.nano.nanowallet.model.Credentials;
-import co.nano.nanowallet.model.NanoWallet;
-import co.nano.nanowallet.network.AccountService;
-import co.nano.nanowallet.ui.common.ActivityWithComponent;
-import co.nano.nanowallet.ui.common.FragmentUtility;
-import co.nano.nanowallet.ui.common.WindowControl;
-import co.nano.nanowallet.ui.home.HomeFragment;
-import co.nano.nanowallet.ui.intro.IntroLegalFragment;
-import co.nano.nanowallet.ui.intro.IntroNewWalletFragment;
-import co.nano.nanowallet.ui.intro.IntroWelcomeFragment;
-import co.nano.nanowallet.ui.webview.WebViewDialogFragment;
-import co.nano.nanowallet.util.SharedPreferencesUtil;
+import com.carteiranano.app.analytics.AnalyticsEvents;
+import com.carteiranano.app.analytics.AnalyticsService;
+import com.carteiranano.app.bus.HideOverlay;
+import com.carteiranano.app.bus.Logout;
+import com.carteiranano.app.bus.OpenWebView;
+import com.carteiranano.app.bus.RxBus;
+import com.carteiranano.app.bus.SeedCreatedWithAnotherWallet;
+import com.carteiranano.app.bus.ShowOverlay;
+import com.carteiranano.app.di.activity.ActivityComponent;
+import com.carteiranano.app.di.activity.ActivityModule;
+import com.carteiranano.app.di.activity.DaggerActivityComponent;
+import com.carteiranano.app.di.application.ApplicationComponent;
+import com.carteiranano.app.model.Credentials;
+import com.carteiranano.app.model.NanoWallet;
+import com.carteiranano.app.network.AccountService;
+import com.carteiranano.app.ui.common.ActivityWithComponent;
+import com.carteiranano.app.ui.common.FragmentUtility;
+import com.carteiranano.app.ui.common.WindowControl;
+import com.carteiranano.app.ui.home.HomeFragment;
+import com.carteiranano.app.ui.intro.IntroLegalFragment;
+import com.carteiranano.app.ui.intro.IntroNewWalletFragment;
+import com.carteiranano.app.ui.intro.IntroWelcomeFragment;
+import com.carteiranano.app.ui.webview.WebViewDialogFragment;
+import com.carteiranano.app.util.SharedPreferencesUtil;
 import io.realm.Realm;
 import io.realm.RealmResults;
 
@@ -71,6 +71,8 @@ public class MainActivity extends AppCompatActivity implements WindowControl, Ac
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        setTheme(R.style.AppTheme);
 
         disableScreenCapture();
 
