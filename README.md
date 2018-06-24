@@ -25,7 +25,7 @@ Nós levamos os contribuidores a sério, inclusive temos um [código de conduta]
 | :----- | :------ |
 [Play Store](https://play.google.com/store/apps/details?id=com.carteiranano.app) | Baixe o aplicativo na Play Store
 [CarteiraNano.com](https://carteiranano.com/) | Site da Carteira Nano
-[Nano.org](https://nanobrasil.org/) | Site Nano Brasil
+[NanoBrasil.org](https://nanobrasil.org/) | Site Nano Brasil
 
 ### Tem alguma pergunta?
 
