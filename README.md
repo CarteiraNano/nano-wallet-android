@@ -1,39 +1,36 @@
-# Nano Android Wallet
+# Carteira Nano Android
 
 ## Setup
 
-* Clone the repository
-* Add file `app/fabric.properties` with `apiKey=<your_api_key>` where `<your_api_key>` is your Fabric api key
-* Open in Android Studio
+* Clone o repositório
+* Adicione o arquivo `app/fabric.properties` com `apiKey=<your_api_key>` onde `<your_api_key>` é sua chave Fabric
+* Abra no Android Studio
 
-### Building From the command line
+### Compilando da linha de comando
 
-* Execute `./gradlew assembleDebug` to create a debug APK
+* Execute `./gradlew assembleDebug` para gerar um APK de debug
 
-### Contributing
+### Contribuindo
 
-All Nano Wallet development happens on GitHub. Contributions make for good karma and
-we welcome new contributors. We take contributors seriously, and thus have a
-contributor [code of conduct](CODE_OF_CONDUCT.md).
+Todo o desenvolvimento da Carteira Nano acontece no Github. Contribuições são muito bem vindas.
+Nós levamos os contribuidores a sério, inclusive temos um [código de conduta](CODE_OF_CONDUCT.md).
 
-* Fork the codebase
-* Make changes
-* Submit a pull request for review
+* Faça um fork do repositório
+* Faça mudanças
+* Envie um pull request para análise
 
 ### Links
 
-| Link | Description |
+| Link | Descrição |
 | :----- | :------ |
-[NanoWalletCompany.com](https://nanowalletcompany.com/) | Nano Wallet Company Homepage
-[Nano.org](https://nano.org/) | Nano Homepage
-[@NanoWalletCo](https://twitter.com/nanowalletco) | Follow Nano on Twitter to stay up to date.
-[Releases](https://github.com/nano-wallet-company/nano-wallet-android/releases) | Check out the releases and their changelogs.
-[Code of Conduct](CODE_OF_CONDUCT.md) | Find out the standards we hold ourselves to.
+[Play Store](https://play.google.com/store/apps/details?id=com.carteiranano.app) | Baixe o aplicativo na Play Store
+[CarteiraNano.com](https://carteiranano.com/) | Site da Carteira Nano
+[Nano.org](https://nanobrasil.org/) | Site Nano Brasil
 
-### Have a question?
+### Tem alguma pergunta?
 
-If you need any help, please visit our [GitHub Issues](https://github.com/nano-wallet-company/nano-wallet-android/issues) or the [Nano #support channel](https://chat.nano.org). Feel free to file an issue if you do not manage to find any solution.
+Se precisar de qualquer ajuda, se diriga aos [Issues](https://github.com/CarteiraNano/nano-wallet-android/issues) ou envie um email para ajuda@nanobrasil.org. Sinta-se à vontade para registrar um issue se você não encontrar nenhuma solução.
 
-### License
+### Licença
 
-Nano Wallet is released under the [BSD-2 License](https://github.com/nano-wallet-company/nano-wallet-android/blob/master/LICENSE)
+Carteira Nano está disponivel sob [BSD-2](https://github.com/CarteiraNano/nano-wallet-android/blob/master/LICENSE)
